@@ -1,4 +1,5 @@
 #needs ruby 1.9 due to String#ord
+#this file is public domain.
 def aprs_passcode(call_sign)
   call_sign.upcase!
   call_sign.slice!(0,call_sign.index('-')) if call_sign =~ /-/
